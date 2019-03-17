@@ -95,7 +95,7 @@ optional arguments:
   --cam CAMERA          use camera to make detections
 
 ```
-## SetUp For Training 
+## Setup For Training 
 
 After downloading and extracting the repository
 **COCO DataSet**
@@ -160,4 +160,4 @@ optional arguments:
 
  
 ## Date
-** 17 / 3 / 2019**
+**17 / 3 / 2019**

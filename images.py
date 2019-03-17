@@ -27,7 +27,7 @@ def arg_parse():
     parser = argparse.ArgumentParser(description='YOLO v3 detection Module')
    
     parser.add_argument("--images", dest = 'images', help = "Image / Directory containing images to perform detection upon", default = "imgs", type = str)
-    parser.add_argument("--outputs", dest = 'outputs', help = "Image / Directory to store detections to", default = "outputs", type = str)
+    parser.add_argument("--outputs", dest = 'outputs', help = "Image / Directory to store detections", default = "outputs", type = str)
     parser.add_argument("--bs", dest = "bs", help = "Batch size", default = 1)
     parser.add_argument("--confidence", dest = "confidence", help = "Object Confidence to filter predictions", default = 0.5)
     parser.add_argument("--nms_thresh", dest = "nms_thresh", help = "NMS Threshhold", default = 0.4)

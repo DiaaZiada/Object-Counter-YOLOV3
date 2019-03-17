@@ -30,7 +30,7 @@ parser.add_argument("--img_size", type=int, default=416, help="size of each imag
 parser.add_argument("--checkpoint_interval", type=int, default=1, help="interval between saving model weights")
 parser.add_argument("--checkpoint_dir", type=str, default="checkpoints", help="directory where model checkpoints are saved")
 parser.add_argument("--use_cuda", type=bool, default=True, help="whether to use cuda if available")
-parser.add_argument("--weights", dest = 'weightsfile', help = "weightsfile", type = str)
+parser.add_argument("--weights", dest = 'weightsfile', help = "pretrained weights to continue traning or use it as initial weights", type = str)
 
 args = parser.parse_args()
 

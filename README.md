@@ -34,16 +34,17 @@ if you have to count a lot of objects daily like goods you can use this toolkit 
  ## Setup For Predictions
  After download and extract the repository
  
- **Weights**
-put your weights in weights directory (to manage the files) or download coco weights for yolov3 of tiny yolo
-by run those commands
+ #### Weights
+Add your weights in weights directory, or download coco weights for yolov3 of tiny yolo
+by running these commands
 yolo -> `$ sh weights/download_weights.sh`
 tiny yolo -> `$ sh weights/download_weights_tiny.sh`
 
-**Configurations**
-put your configuration file for your model in config directory (to manage the files) or use yolov3 of tiny yolo configurations models files 
+#### Configurations
+Add your configuration file for your model in config directory, or use yolov3 of tiny yolo configurations models files
+ 
 ## Images
-`images.py` is the file that responsible to manage the predictions on images
+`images.py` is the script that is responsible for managing predictions on images
 ```
 usage: images.py [-h] [--images IMAGES] [--outputs OUTPUTS] [--bs BS]
                  [--confidence CONFIDENCE] [--nms_thresh NMS_THRESH]
@@ -69,7 +70,7 @@ optional arguments:
 
 ```
 ## Videos
-`video.py` is the file that responsible to manage the predictions on videos
+`video.py` is the script that is responsible for managing predictions on videos
 ```
 usage: video.py [-h] [--bs BS] [--confidence CONFIDENCE]
                 [--nms_thresh NMS_THRESH] [--config CONFIGFILE]
@@ -96,16 +97,16 @@ optional arguments:
 ```
 ## SetUp For Training 
 
-After download and extract the repository
+After downloading and extracting the repository
 **COCO DataSet**
-	for download the COCO dataset run this command
+	For downloading the COCO dataset run this command
 	`$  sh data/get_coco_dataset.sh `
 **Custom DataSet**
-	get into data directory and put our dataset in this directory (to manage the files)
+	Get into data directory and put our dataset in this directory (to manage the files)
 	the dataset structure must be like coco data set 
- - images: should be in directory named images 
- - labels : should be in directory named labels, the label of each image must has same name but the extinction be `.txt` 
- - data configuration file be in the config directory and be like this
+ - images: should be in directory named **images** 
+ - labels : should be in directory named **labels**, the label of each image must has same name but the extinction be `.txt` 
+ - data configuration file should be in **config** directory and be like this
 	 ```
 	classes=80
 	train=data/coco/trainvalno5k.txt
@@ -116,7 +117,7 @@ After download and extract the repository
 	```
 
 ## Train
-`train.py` is the file that responsible to manage the training process
+`train.py` is the script that is responsible for managing the training process
 ```
 usage: train.py [-h] [--epochs EPOCHS] [--image_folder IMAGE_FOLDER]
                 [--batch_size BATCH_SIZE]

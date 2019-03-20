@@ -158,6 +158,8 @@ optional arguments:
   --use_cuda USE_CUDA   whether to use cuda if available
 ```
 
- 
+ ## Credits
+ - [YOLO v3 tutorial from scratch](https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch)
+ - [PyTorch YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3)
 ## Date
 **17 / 3 / 2019**
